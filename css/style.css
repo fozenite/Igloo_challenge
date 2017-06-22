@@ -1,5 +1,28 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-}
+  font-family: "Open Sans", sans-serif; }
+  body h1 {
+    font-size: 56px; }
+  body h3 {
+    font-size: 20px; }
+  body .navigation {
+    margin-left: 200px;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%; }
+    body .navigation #n-primary li {
+      display: inline-flex;
+      padding-right: 30px; }
+      body .navigation #n-primary li .nav-items {
+        text-decoration: none; }
+  body a {
+    color: #000; }
+  body #content {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto; }
+  body .footer {
+    background: #000;
+    color: #FFF;
+    text-align: center; }
 
-/* Your styles here ... */
+/*# sourceMappingURL=style.css.map */
