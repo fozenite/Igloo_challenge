@@ -16,13 +16,13 @@
   <body>
     <div class="navigation">
       <div id="n-primary">
-        <li><a href="#" class="nav-items">HOME</a></li>
-        <li><a href="#" class="nav-items">DASHBOARD</a></li>
-        <li><a href="#" class="nav-items">ABOUT</a></li>
-        <li><a href="#" class="nav-items">CAMPAIGNS/BRAND</a></li>
-        <li><a href="#" class="nav-items">FILES</a></li>
-        <li><a href="#" class="nav-items">DEPARTMENTS</a></li>
-        <li><a href="#" class="nav-items">MEMBERS</a></li>
+        <div class="nav-divs"><a href="#" class="nav-items">HOME</a></div>
+        <div class="nav-divs"><a href="#" class="nav-items">DASHBOARD</a></div>
+        <div class="nav-divs"><a href="#" class="nav-items">ABOUT</a></div>
+        <div class="nav-divs"><a href="#" class="nav-items">CAMPAIGNS/BRAND</a></div>
+        <div class="nav-divs"><a href="#" class="nav-items">FILES</a></div>
+        <div class="nav-divs"><a href="#" class="nav-items">DEPARTMENTS</a></div>
+        <div class="nav-divs"><a href="#" class="nav-items">MEMBERS</a></div>
       </div>
 
       <div id="search">
@@ -42,14 +42,28 @@
           </div>
         </div>
       </div>
-      <h3>Members</h3>
-      <!--Insert Members Here -->
-
-      <a id="js-btn-action-more" class="btn-load-more" href="#">Load more</a>
+      <div class="members">
+        <div class="members-title">
+          <h2>Members</h2>
+        </div>
+        <!--Insert Members Here -->
+        <div class="member-tiles-container">
+          <div class="member-tiles"></div>
+          <div class="member-tiles"></div>
+          <div class="member-tiles"></div>
+          <div class="member-tiles"></div>
+          <div class="member-tiles"></div>
+        </div>
+        <div class="load-more-div">
+          <button class="btn-load-more"><a id="js-btn-action-more" class="btn-link" href="#">Load more</a>
+          </button>
+        </div>
+      </div>
     </div>
 
     <div class="footer">
-      <p>Copyright 2016</p>
+      <p id="Copyright"><i class="fa fa-copyright" aria-hidden="true"></i> 2016</p>
+      <img src="./assets/community-footer-logo.jpg" alt="Igloo logo" id="logo">
     </div>
   <script src="js/apiClient.js"></script>
   <script src="js/main.js"></script>
