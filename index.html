@@ -5,6 +5,9 @@
     <title>Web Challenge</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mootools/1.6.0/mootools-core.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -23,15 +26,23 @@
       </div>
 
       <div id="search">
+          <span class="icon"><i class="fa fa-search"></i></span>
+           <input type="text" name="search" placeholder="Search Anywhere">
       </div>
     </div>
 
     <div id="content">
       <div class="banner">
-        <h1>Welcome to the Community</h1>
-        <p>Share, connect and collaborate.</p>
+        <div class="banner-back">
+          <div class="banner-head">
+            <h1>Welcome to the Community</h1>
+          </div>
+          <div class="banner-desc">
+            <h2>Share, connect and collaborate.</h2>
+          </div>
+        </div>
       </div>
-      <h2>Members</h2>
+      <h3>Members</h3>
       <!--Insert Members Here -->
 
       <a id="js-btn-action-more" class="btn-load-more" href="#">Load more</a>
