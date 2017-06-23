@@ -1,0 +1,20 @@
+{
+  "name": "igloo_challenge",
+  "version": "1.0.0",
+  "description": "This is the code challenge for anyone interested in being a Web Developer at Igloo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fozenite/Igloo_challenge.git"
+  },
+  "keywords": [],
+  "author": "Rohit Moza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fozenite/Igloo_challenge/issues"
+  },
+  "homepage": "https://github.com/fozenite/Igloo_challenge#readme"
+}
