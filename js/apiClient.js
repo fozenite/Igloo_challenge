@@ -2,33 +2,31 @@
  * Request next set of members thought ApiGetClient
  */
 
-let options = {
-                headers: {
-                          Accept: 'application/json'
-                        },
-                method: 'get',
-                queryparams: null,
-                apibaseurl: 'https://randomuser.me',
-                apipath: '/api/'
-              };
+var ApiGetClient = new Class({
+  Extends: Request,
+  options: {
+    headers: {
+      Accept: 'application/json'
+    },
+    method: 'get',
+    queryparams: null,
+    apibaseurl: '',
+    apipath: ''
+  },
 
-class ApiGetClient {
-
-  constructor(options) {
-    console.log("I'm here");
+  initialize: function(options) {
     this.parent(options);
     this.setApiUrl();
     this.setQueryParams(this.options.queryparams);
     this.send();
-  }
+  },
 
-  setApiUrl() {
-    console.log("I'm here");
+  setApiUrl: function() {
     this.apiurl = this.options.apibaseurl;
     this.apiurl += this.options.apipath;
-  }
+  },
 
-  setQueryParams(params) {
+  setQueryParams: function(params) {
     var apiquerystring = {};
     if (params) {
       Object.merge(apiquerystring, params);
@@ -37,13 +35,13 @@ class ApiGetClient {
       this.apiurl += '?' + Object.toQueryString(apiquerystring);
       this.apiurl = this.apiurl.replace("'", '%27');
     }
-  }
+  },
 
-  getRequestUrl() {
+  getRequestUrl: function() {
     return this.apiurl;
-  }
+  },
 
-  send (query_string) {
+  send: function(query_string) {
     if (typeof(query_string) === 'string') {
       this.setOptions({
         postdata: query_string.parseQueryString()
@@ -57,6 +55,6 @@ class ApiGetClient {
     this.parent(query_string);
   }
 
-};
+});
 
 
