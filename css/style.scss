@@ -1,29 +1,44 @@
 $font-stack:  'Open Sans', sans-serif;
-
+// Reslimits
+  //->Hi Res
 $hiResMax: 2000px;
 $hiResMin: 1480px;
+
+  //->MedRes
 $medResMax: 1479px;
 $medResMin: 1353px;
+
+  //->Low Res
 $lowResMax: 1352px;
 $lowResMin: 1341px;
+
+  //->xLowRes
 $xlowResMax: 1340px;
 $xlowResMin: 1100px;
+
+  //->tabletRes
 $tabletDevMin: 415px;
 $tabletDevMax: 1099px;
+
+  //->mobileRes
 $mobileDevMin: 312px;
 $mobileDevMax: 414px;
 
 
-
-
 @media screen and (max-width: $hiResMax) and (min-width: $hiResMin) {
+  //General Styles
+  $margin-sides: 13.33%;
+
+  //Banner Styles
   $banner-height: 100%;
   $h1-fontSize: 4.5em;
   $h3-fontSize: 2em;
-  $h2-members-fontSize: 3em;
-  $margin-sides: 13.33%;
-  $load-left-margin: 0%;
+
+  //Content Styles
   $content-margin-top: 3%;
+  $h2-members-fontSize: 3em;
+  $load-left-margin: 0%;
+
   .banner-style {
     margin: 0 auto;
     filter: brightness(100%);
@@ -31,6 +46,7 @@ $mobileDevMax: 414px;
     z-index: -1;
     background: none;
   }
+
   .banner-font {
     display: inline-flex;
     justify-content: center;
@@ -55,13 +71,13 @@ $mobileDevMax: 414px;
       width: 100%;
       margin-top: 1%;
       margin-bottom: 1%;
+
       #n-primary {
         display: inline-flex;
         flex-wrap: wrap;
         z-index: 2;
         padding-bottom: 0.6%;
         width: 60%;
-
 
         .nav-divs {
             display: inline-flex;
@@ -99,6 +115,7 @@ $mobileDevMax: 414px;
         input[type=text]:focus {
           width: 100%;
         }
+
         .icon{
           position: absolute;
           padding-top:0.05em;
@@ -111,6 +128,7 @@ $mobileDevMax: 414px;
     a{
       color:#000;
     }
+
     #content{
       position:fixed;
       display: inline-flex;
@@ -120,6 +138,7 @@ $mobileDevMax: 414px;
       width: 100%;
       height:30vh;
       z-index: -1;
+
       .banner {
         display: inline-flex;
         flex-direction: column;
@@ -129,6 +148,7 @@ $mobileDevMax: 414px;
         opacity: 0.8;
         width:100%;
         height: $banner-height;
+
         .banner-back{
           display: inline-flex;
           flex-direction: column;
@@ -137,6 +157,7 @@ $mobileDevMax: 414px;
           z-index:-2;
           opacity:0.5;
           height: 100%;
+
           .banner-head {
             @extend .banner-style;
             h1 {
@@ -155,6 +176,7 @@ $mobileDevMax: 414px;
           }
         }
       }
+
       .members {
         z-index: -3;
         position: fixed;
@@ -166,7 +188,6 @@ $mobileDevMax: 414px;
         margin-top: 35vh;
 
         .members-title {
-
         display: inline-flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -184,6 +205,7 @@ $mobileDevMax: 414px;
           margin: 0 auto;
           height: 25vh;
           width: 75%;
+
           .member-tiles {
             margin-right: 0.2%;
             margin-left:  0.2%;
@@ -193,12 +215,12 @@ $mobileDevMax: 414px;
             min-width: 200px;
             min-height: 190px;
 
-
            .member-tile-pic {
             padding-top: 2%;
             display: inline-flex;
             justify-content: center;
             width: 100%;
+
               .usr-thumb{
                   border-radius: 50%;
                           width: 50%;
@@ -238,13 +260,14 @@ $mobileDevMax: 414px;
           flex-wrap: wrap;
           margin-top:2vh;
           margin-left: $load-left-margin;
+
           .btn-load-more{
             background-color: #1E90FF;
             border: none;
             height: 3em;
             border-radius: 8px;
-
           }
+
           .btn-link {
             text-decoration: none;
             height: 100%;
@@ -259,6 +282,7 @@ $mobileDevMax: 414px;
         }
       }
     }
+
     .footer {
       display: inline-flex;
       position:fixed;
@@ -273,6 +297,7 @@ $mobileDevMax: 414px;
         margin-top: 1em;
         margin-left: $margin-sides;
       }
+
       #logo {
         margin-left: auto;
         margin-top: 1em;
@@ -285,14 +310,23 @@ $mobileDevMax: 414px;
 }
 
 @media screen and (max-width: $medResMax) and (min-width: $medResMin) {
+  //General Styles
+  $margin-sides: 5%;
+
+  //Nav Styles
+  $font-size-nav-items: 90%;
+  //Content Styles
+  $h2-members-fontSize: 3em;
+  $load-left-margin: 0%;
+  $content-margin-top: 3%;
+
+  //Banner Styles
   $banner-height: 85%;
   $h1-fontSize: 4.5em;
   $h3-fontSize: 2em;
-  $h2-members-fontSize: 3em;
-  $margin-sides: 5%;
-  $load-left-margin: 0%;
-  $content-margin-top: 3%;
-  $font-size-nav-items: 90%;
+
+
+
   .banner-style2 {
     margin: 0 auto;
     filter: brightness(100%);
@@ -559,17 +593,26 @@ $mobileDevMax: 414px;
 }
 
 @media screen and (max-width: $lowResMax) and (min-width: $lowResMin) {
+  // General Styles
   $margin-sides: 5%;
-  $banner-height: 85%;
+
+  // Nav Styles
+  $font-size-nav-items: 90%;
+
+  // Banner Styles
+    $banner-height: 85%;
   $h1-fontSize: 4.5em;
   $h3-fontSize: 2em;
+
+  //Content Styles
   $h2-members-fontSize: 3em;
-  $footer-margin: 90vh;
-  $footer-height: 10vh;
-  $margin-sides: 5%;
   $load-left-margin: 80%;
   $content-margin-top: 3%;
-  $font-size-nav-items: 90%;
+
+  //Footer Styles
+  $footer-margin: 90vh;
+  $footer-height: 10vh;
+
   .banner-style3 {
     margin: 0 auto;
     filter: brightness(100%);
@@ -837,21 +880,32 @@ $mobileDevMax: 414px;
 }
 
 @media screen and (max-width: $xlowResMax) and (min-width: $xlowResMin) {
+  // General Styles
   $margin-sides: 5%;
+
+  // Nav Styles
+  $font-size-nav-items: 70%;
+
+  // Banner Styles
   $banner-height: 85%;
   $h1-fontSize: 3.5em;
   $h3-fontSize: 1em;
+
+  //Content Styles
   $h2-members-fontSize: 3em;
-  $footer-margin: 90vh;
-  $footer-height: 10vh;
-  $margin-sides: 5%;
   $load-left-margin: 85%;
   $content-margin-top: 2%;
-  $font-size-nav-items: 70%;
+
+  //Footer Styles
+  $footer-margin: 90vh;
+  $footer-height: 10vh;
+
+
   //SEARCH
   $search-margin-top: -0.5%;
   $search-height: 1.5em;
   $search-font-size: 70%;
+
 
   .banner-style4 {
     margin: 0 auto;
@@ -1122,18 +1176,28 @@ $mobileDevMax: 414px;
 }
 
 @media screen and (max-width: $mobileDevMax) and (min-width: $mobileDevMin) {
+  // General Styles
   $margin-sides: 5%;
+
+  // Nav Styles
+  $font-size-nav-items: 80%;
+
+  // Banner Styles
   $banner-height: 90%;
   $h1-fontSize: 1.5em;
   $h3-fontSize: 0.6em;
   $h2-members-fontSize: 2em;
-  $footer-margin: 90vh;
-  $footer-height: 10vh;
-  $margin-sides: 5%;
+
+  // Content Styles
   $load-left-margin: 0%;
   $load-margin-top: -17vh;
   $content-margin-top: 15%;
-  $font-size-nav-items: 80%;
+
+  // Footer Styles
+  $footer-margin: 90vh;
+  $footer-height: 10vh;
+  $margin-sides: 5%;
+
   .banner-style5 {
     margin: 0 auto;
     filter: brightness(100%);
@@ -1403,43 +1467,34 @@ $mobileDevMax: 414px;
 }
 
 @media screen and (max-width: $tabletDevMax) and (min-width: $tabletDevMin) {
+  // General Styles
   $margin-sides: 5%;
+
+  // Nav Styles
+  $main-nav-width: 65%;
+  $font-size-nav-items: 55%;
+  // Banner Styles
   $banner-height: 85%;
   $h1-fontSize: 2.5em;
   $h3-fontSize: 0.9em;
   $h2-members-fontSize: 2.5em;
-  $footer-margin: 90vh;
-  $footer-height: 10vh;
-  $margin-sides: 5%;
-  $load-left-margin: 85%;
+
+  // Content Styles
   $content-margin-top: 4%;
-  $font-size-nav-items: 55%;
   $load-left-margin: 0%;
   $load-margin-top: -17vh;
 
-  $main-nav-width: 65%;
-  //SEARCH
+   //Search styles
   $search-margin-top: -0.5%;
   $search-height: 1.5em;
   $search-font-size: 55%;
   $search-margin-left: 65%;
   $search-bar-width: 80px;
 
-  // $margin-sides: 5%;
-  // $banner-height: 85%;
-  // $h1-fontSize: 3.5em;
-  // $h3-fontSize: 1em;
-  // $h2-members-fontSize: 3em;
-  // $footer-margin: 90vh;
-  // $footer-height: 10vh;
-  // $margin-sides: 5%;
-  // $load-left-margin: 85%;
-  // $content-margin-top: 2%;
-  // $font-size-nav-items: 70%;
-  // //SEARCH
-  // $search-margin-top: -0.5%;
-  // $search-height: 1.5em;
-  // $search-font-size: 70%;
+  //Footer Styles
+  $footer-margin: 90vh;
+  $footer-height: 10vh;
+  $margin-sides: 5%;
 
   .banner-style6 {
     margin: 0 auto;
